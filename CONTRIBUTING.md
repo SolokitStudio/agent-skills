@@ -2,6 +2,8 @@
 
 Thanks for helping improve these skills. Small, focused pull requests are easiest to review.
 
+This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By taking part, you agree to follow it.
+
 ## Good contributions
 
 - **Skill fixes:** a step that produces wrong or vague output, a missing input the skill should ask for, or an honesty rule the skill breaks in practice. Include the prompt you used and what the agent returned.

@@ -177,7 +177,7 @@ The skills in this repo are MIT licensed. The other 17 skills are sold under a s
 
 ## Contributing
 
-Bug reports, fixes to a skill's steps or output, and new install paths for other agents are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Run `python3 scripts/validate.py` and `bash tests/test_install.sh` before opening a pull request.
+Bug reports, fixes to a skill's steps or output, and new install paths for other agents are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Run `python3 scripts/validate.py` and `bash tests/test_install.sh` before opening a pull request. Everyone taking part agrees to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
