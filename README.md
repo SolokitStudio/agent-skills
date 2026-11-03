@@ -33,9 +33,10 @@ Every skill follows the same rules: it asks for missing inputs instead of guessi
 curl -fsSL https://raw.githubusercontent.com/SolokitStudio/agent-skills/main/install.sh | bash
 ```
 
-This installs for your user account, for all four tools:
+This installs for your user account, for all four tools. Real output:
 
 ```text
+Downloading SolokitStudio/agent-skills (main)
 -> /Users/you/.claude/skills
   installed solo-pricing-sanity-check
   installed solo-product-page-audit
