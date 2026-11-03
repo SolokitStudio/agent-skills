@@ -1,0 +1,25 @@
+name: Bug report
+description: A skill, the installer, or the docs did something wrong.
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [solo-product-page-audit, solo-pricing-sanity-check, solo-say-do-check, install.sh, Docs, Other]
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Agent and version
+      placeholder: "Claude Code 2.1.316, Cursor 2026.10, Codex CLI 0.166.0, Gemini CLI 0.66.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The prompt or command you ran, what you expected, and what you got. Remove private data.
+    validations:
+      required: true

@@ -1,0 +1,10 @@
+{
+  "name": "solokit-agent-skills",
+  "version": "1.0.0",
+  "description": "Free Agent Skills for solo operators: product page audit, pricing sanity check, and say-do check.",
+  "author": { "name": "Solokit Studio", "url": "https://github.com/SolokitStudio" },
+  "homepage": "https://github.com/SolokitStudio/agent-skills",
+  "repository": "https://github.com/SolokitStudio/agent-skills",
+  "license": "MIT",
+  "keywords": ["agent-skills", "solo-founder", "pricing", "product-page", "verification"]
+}

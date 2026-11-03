@@ -1,0 +1,19 @@
+{
+  "name": "solokit",
+  "owner": {
+    "name": "Solokit Studio",
+    "url": "https://github.com/SolokitStudio"
+  },
+  "metadata": {
+    "description": "Solokit Studio's free Agent Skills for solo operators."
+  },
+  "plugins": [
+    {
+      "name": "solokit-agent-skills",
+      "source": "./",
+      "description": "Free Agent Skills for solo operators: product page audit, pricing sanity check, and say-do check.",
+      "version": "1.0.0",
+      "license": "MIT"
+    }
+  ]
+}
