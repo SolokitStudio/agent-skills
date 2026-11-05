@@ -1,0 +1,38 @@
+name: agent-skill-check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/agent-skill-check/**"
+      - ".github/workflows/agent-skill-check.yml"
+  pull_request:
+    paths:
+      - "tools/agent-skill-check/**"
+      - ".github/workflows/agent-skill-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fixtures:
+    name: Run fixture suite
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/agent-skill-check
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Run agent-skill-check fixtures
+        run: python -m agent_skill_check --markdown "$GITHUB_WORKSPACE/agent-skill-check-report.md"
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-skill-check-report
+          path: agent-skill-check-report.md

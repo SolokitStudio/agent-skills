@@ -1,0 +1,19 @@
+[project]
+name = "agent-skill-check"
+version = "0.1.0"
+description = "Fixture-based acceptance checks for agent tool-log exports"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Solokit Studio" }]
+dependencies = ["pyyaml>=5.1"]
+
+[project.scripts]
+agent-skill-check = "agent_skill_check.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agent_skill_check*"]

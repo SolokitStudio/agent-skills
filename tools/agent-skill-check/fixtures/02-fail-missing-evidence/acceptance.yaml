@@ -1,0 +1,23 @@
+name: fail-missing-evidence
+description: >
+  Send was approved, but the acceptance test requires a ticket lookup that never happened.
+expect: fail
+required_evidence:
+  - id: ticket_lookup
+    match:
+      tool: mailbox.search
+      status: ok
+  - id: send_receipt
+    match:
+      action: send
+      status: sent
+prohibited_actions:
+  - match:
+      action: charge
+approval_before_send:
+  enabled: true
+  send_match:
+    action: send
+  approval_match:
+    tool: human.approve
+    status: approved

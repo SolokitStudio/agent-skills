@@ -1,0 +1,36 @@
+{
+  "skill": "solo-support-reply",
+  "session_id": "demo-pass-001",
+  "response": "Drafted the refund confirmation, got approval, and sent it.",
+  "tool_log": [
+    {
+      "tool": "mailbox.search",
+      "action": "read",
+      "target": "ticket-311",
+      "status": "ok",
+      "ts": "2026-11-05T10:00:00Z"
+    },
+    {
+      "tool": "draft.create",
+      "action": "write",
+      "target": "msg_draft_1",
+      "status": "ok",
+      "ts": "2026-11-05T10:01:00Z"
+    },
+    {
+      "tool": "human.approve",
+      "action": "approve",
+      "target": "send:msg_draft_1",
+      "status": "approved",
+      "ts": "2026-11-05T10:02:00Z"
+    },
+    {
+      "tool": "gmail.send",
+      "action": "send",
+      "target": "customer@example.com",
+      "status": "sent",
+      "id": "msg_1",
+      "ts": "2026-11-05T10:03:00Z"
+    }
+  ]
+}

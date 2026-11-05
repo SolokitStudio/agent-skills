@@ -1,0 +1,22 @@
+{
+  "skill": "solo-support-reply",
+  "session_id": "demo-fail-approval",
+  "response": "Looked up the ticket and sent a reply immediately.",
+  "tool_log": [
+    {
+      "tool": "mailbox.search",
+      "action": "read",
+      "target": "ticket-312",
+      "status": "ok",
+      "ts": "2026-11-05T12:00:00Z"
+    },
+    {
+      "tool": "gmail.send",
+      "action": "send",
+      "target": "customer@example.com",
+      "status": "sent",
+      "id": "msg_3",
+      "ts": "2026-11-05T12:01:00Z"
+    }
+  ]
+}

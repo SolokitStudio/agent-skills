@@ -25,6 +25,18 @@ curl -fsSL https://raw.githubusercontent.com/SolokitStudio/agent-skills/main/ins
 
 Every skill follows the same rules: it asks for missing inputs instead of guessing, never invents numbers, quotes or links, says what it could not check, marks gaps as `[[PLACEHOLDER: ...]]`, and only drafts. It never sends, posts, buys or refunds anything for you.
 
+## Tools
+
+### [`agent-skill-check`](tools/agent-skill-check/) — acceptance tests for agent tool logs
+
+A small, deterministic runner that checks an exported tool log against a predeclared acceptance YAML: required evidence present, prohibited actions flagged, approval before send. Distinct from [say-do-diff](https://github.com/SolokitStudio/say-do-diff) (claim vs log) and from [`solo-say-do-check`](skills/solo-say-do-check/SKILL.md) (status claims in a session). Bundled with five pass/fail fixtures and a GitHub Actions workflow.
+
+```bash
+cd tools/agent-skill-check
+pip install pyyaml
+python -m agent_skill_check
+```
+
 ## Install
 
 ### One command (macOS, Linux, WSL)
@@ -145,7 +157,7 @@ Invoice INV-1042 is drafted but not sent yet."
 
 The inputs, prompt and full output are in [`examples/say-do-check/`](examples/say-do-check/), so you can rerun it yourself. Wording will vary between models; the four results should not. Each `SKILL.md` also contains its own worked example.
 
-If you want the same check as a deterministic script for agent tool-call logs, see [say-do-diff](https://github.com/SolokitStudio/say-do-diff).
+If you want the same check as a deterministic script for agent tool-call logs, see [say-do-diff](https://github.com/SolokitStudio/say-do-diff). For **acceptance criteria** on a tool log (evidence, prohibited actions, approval-before-send), see [`agent-skill-check`](tools/agent-skill-check/).
 
 ## Compatibility
 

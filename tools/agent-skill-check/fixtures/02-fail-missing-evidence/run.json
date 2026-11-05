@@ -1,0 +1,29 @@
+{
+  "skill": "solo-support-reply",
+  "session_id": "demo-fail-evidence",
+  "response": "Sent a reply without looking up the ticket first.",
+  "tool_log": [
+    {
+      "tool": "draft.create",
+      "action": "write",
+      "target": "msg_draft_2",
+      "status": "ok",
+      "ts": "2026-11-05T11:00:00Z"
+    },
+    {
+      "tool": "human.approve",
+      "action": "approve",
+      "target": "send:msg_draft_2",
+      "status": "approved",
+      "ts": "2026-11-05T11:01:00Z"
+    },
+    {
+      "tool": "gmail.send",
+      "action": "send",
+      "target": "customer@example.com",
+      "status": "sent",
+      "id": "msg_2",
+      "ts": "2026-11-05T11:02:00Z"
+    }
+  ]
+}

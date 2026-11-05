@@ -1,0 +1,21 @@
+{
+  "skill": "solo-pricing-sanity-check",
+  "session_id": "demo-pass-readonly",
+  "response": "Fetched the product page and listed catalog peers. Draft only.",
+  "tool_log": [
+    {
+      "tool": "web.fetch",
+      "action": "read",
+      "target": "https://example.com/pricing",
+      "status": "ok",
+      "ts": "2026-11-05T14:00:00Z"
+    },
+    {
+      "tool": "catalog.list",
+      "action": "read",
+      "target": "own-catalog",
+      "status": "ok",
+      "ts": "2026-11-05T14:01:00Z"
+    }
+  ]
+}
