@@ -6,6 +6,7 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ### Added
 
+- Documented Windsurf support, skill installation paths, and invocation in `README.md` (#5).
 - `tools/agent-skill-check`: fixture-based acceptance runner for agent tool-log exports (required evidence, prohibited actions, approval-before-send), five demo fixtures, and `.github/workflows/agent-skill-check.yml`.
 
 ## [1.0.0] - 2026-11-02

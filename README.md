@@ -108,8 +108,9 @@ Copy each folder in [`skills/`](skills/) into the folder your tool reads:
 | Cursor | `~/.cursor/skills/` (also reads `~/.agents/skills/`, `~/.claude/skills/`) | `.cursor/skills/` or `.agents/skills/` | [cursor.com/docs/skills](https://cursor.com/docs/skills) |
 | Codex (CLI, IDE, app) | `~/.agents/skills/` | `.agents/skills/` | [developers.openai.com/codex/skills](https://developers.openai.com/codex/skills) |
 | Gemini CLI | `~/.gemini/skills/` or `~/.agents/skills/` | `.gemini/skills/` or `.agents/skills/` (folder must be trusted) | [geminicli.com/docs/cli/skills](https://geminicli.com/docs/cli/skills) |
+| Windsurf | `~/.codeium/windsurf/skills/` (also reads `~/.agents/skills/`) | `.windsurf/skills/` or `.agents/skills/` | [docs.codeium.com/windsurf/skills](https://docs.codeium.com/windsurf/skills) |
 
-On Windows without WSL, copy the folders into `%USERPROFILE%\.claude\skills\` (Claude Code) or `%USERPROFILE%\.agents\skills\` (Codex, Gemini CLI, Cursor).
+On Windows without WSL, copy the folders into `%USERPROFILE%\.claude\skills\` (Claude Code) or `%USERPROFILE%\.agents\skills\` (Codex, Gemini CLI, Cursor, Windsurf).
 
 Uninstall with `./install.sh --uninstall`, or delete the three `solo-*` folders.
 
@@ -121,7 +122,7 @@ To call a skill by name:
 
 | Tool | How |
 |---|---|
-| Claude Code, Cursor | `/solo-product-page-audit` |
+| Claude Code, Cursor, Windsurf | `/solo-product-page-audit` |
 | Codex | `$solo-product-page-audit`, or `/skills` to list |
 | Gemini CLI | `/skills list`, then ask; `/skills reload` picks up new skills |
 
